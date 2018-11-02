@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ronishPortfolio",
   "main": "index.js",
-  "homepage": "https://sanskritil.github.io/ronishportfolio/",
+  "homepage": "http://sanskritil.github.io/ronishportfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
