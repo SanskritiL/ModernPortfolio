@@ -30,3 +30,11 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+var loveCount = parseInt(document.getElementById("lovecount").innerHTML);
+console.log(loveCount);
+
+function increase() {
+  loveCount = loveCount + 1;
+  document.getElementById("lovecount").innerHTML = loveCount;
+}

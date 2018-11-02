@@ -102,6 +102,59 @@ main {
   padding: 0.5rem;
   border-bottom: $secondary-color 4px solid;
 }
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+  div {
+    font-size: 1.6rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+
+    @include easeOut;
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
+#work {
+  .projects {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .article1 {
+      font-size: 20px;
+      text-align: justify;
+      padding: 0.5rem;
+      border-right: solid 2px $secondary-color;
+      border-bottom: solid 3px $secondary-color;
+      background-color: darken($primary-color, 6);
+
+      .loveicon {
+        .fas.fa-heart {
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+        span {
+          font-size: 14px;
+          padding: 0 0 0 0.2rem;
+        }
+      }
+    }
+  }
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
